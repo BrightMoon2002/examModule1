@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question1</title>
+</head>
+<body>
+<script>
+    function firstEquation(a, b) {
+        let x = 0;
+        if (a === 0 && b === 0) {
+            alert("phương trình có vô số nghiệm");
+        } else if (a === 0 && b !== 0) {
+            alert("phương trình vô nghiệm");
+        } else {
+            x = -b / a;
+            return x;
+        }
+    }
+
+    function displayResult() {
+        let result = firstEquation(5, 8);
+        alert(result)
+    }
+    displayResult()
+
+</script>
+</body>
+</html>

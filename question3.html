@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question3</title>
+</head>
+<body>
+<script>
+    let arrVowel = ['a', 'o', 'e', 'u', 'i'];
+    function checkVowel(inputString) {
+        let count = 0;
+        for (let i = 0; i < inputString.length; i++) {
+            for (let j = 0; j < arrVowel.length; j++){
+                if (inputString[i] === arrVowel[j]) {
+                    count++;
+                }
+            }
+        }
+        if (count === 0) {
+            return false;
+        } else {
+            return count;
+        }
+    }
+
+    function displayCheck() {
+        let string = prompt("Enter the string");
+        let result = checkVowel(string);
+        console.log(result);
+    }
+    displayCheck()
+</script>
+</body>
+</html>

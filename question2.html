@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question2</title>
+</head>
+<body>
+<script>
+    function checkArray(num, arr) {
+        for (let i = 0; i < arr.length; i++) {
+            if (num === arr[i]) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    function displayCheck() {
+        let array = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+        let number = parseInt(prompt("Enter the number:"))
+        let result = checkArray(number, array);
+        if (result === -1) {
+            alert("Số bạn vừa nhập không nằm trong dãy số");
+        } else {
+            alert(array[result] + " nằm trong dãy số")
+        }
+    }
+    displayCheck()
+
+
+</script>
+</body>
+</html>
